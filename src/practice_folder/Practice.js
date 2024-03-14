@@ -1,7 +1,7 @@
 // import ClassComonent from "./lifecycle/ClassComponent";
 // import FunctionHookComponent from "./hook/FunctionHookComponent";
-import UseRefComponent from "./hook/UseRefComponent";
-
+// import UseRefComponent from "./hook/UseRefComponent";
+import Form from "./FormMy";
 function Practice (){
 
 
@@ -9,7 +9,8 @@ function Practice (){
         <>
 {/* <ClassComonent/> */}
 {/* <FunctionHookComponent/> */}
-<UseRefComponent/>
+{/* <UseRefComponent/>*/}
+<Form/>
         </>
         )
 }
