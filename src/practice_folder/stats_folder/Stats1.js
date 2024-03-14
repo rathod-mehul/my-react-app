@@ -7,12 +7,9 @@ function Stats1() {
         msg2(msg1 + 1);
     }
 
-    let clickCapture = () => {
-
-    }
 
     return (
-        <div onClickCapture={clickCapture}>
+        <div >
 
             <div>{msg1}</div>
             <button onClick={clickEvent}>click Event</button>

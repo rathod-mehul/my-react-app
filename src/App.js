@@ -7,7 +7,11 @@
 // import Slidebar from "./layout/Sidebar";
 // import Footer from "./layout/Footer";
 
-import Stats1 from "./practice_folder/Stats1";
+
+// import Stats1 from "./practice_folder/stats_folder/Stats1";
+// import Hover from "./practice_folder/stats_folder/Hover";
+
+import Practice from "./practice_folder/Practice";
 function App() {
   return (
     //     <div className="App">
@@ -33,9 +37,14 @@ function App() {
 
     <>
       {/* <Navbar compnayName/>
-      <Slidebar menu={['hoem','about']}/>
-      <Footer details={{name:'user1',mobile:5271679529}}/> */}
-      <Stats1/>
+      <Slidebar menu={['hoem','about']}/>*/}
+      {/* <Footer details={{name:'user1',mobile:5271679529}}/>  */}
+      {/* <Footer details={['name','user1','mobile',5271679529]}/>  */}
+
+      {/* <Stats1/> */}
+      {/* <Hover/> */}
+
+      <Practice/>
 </>
   );
 }
