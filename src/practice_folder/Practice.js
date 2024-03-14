@@ -1,5 +1,6 @@
 // import ClassComonent from "./lifecycle/ClassComponent";
-import FunctionHookComponent from "./hook/FunctionHookComponent";
+// import FunctionHookComponent from "./hook/FunctionHookComponent";
+import UseRefComponent from "./hook/UseRefComponent";
 
 function Practice (){
 
@@ -7,7 +8,8 @@ function Practice (){
     return(
         <>
 {/* <ClassComonent/> */}
-<FunctionHookComponent/>
+{/* <FunctionHookComponent/> */}
+<UseRefComponent/>
         </>
         )
 }
