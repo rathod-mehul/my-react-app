@@ -3,7 +3,8 @@
 // import UseRefComponent from "./hook/UseRefComponent";
 // import Form from "./FormMy";
 // import FormWithRef from "./FormwWthRef";
-import Form from "./Form";
+// import Form from "./Form";
+import FunctionComponent from "../FuntionComponent";
 function Practice (){
 
 
@@ -14,7 +15,8 @@ function Practice (){
 {/* <UseRefComponent/>*/}
 {/* <Form/> */}
 {/* <FormWithRef/> */}
-<Form/>
+{/* <Form/> */}
+<FunctionComponent name="chirag"/>
         </>
         )
 }

@@ -2,15 +2,14 @@ import React, { useState } from 'react'
 
  function Form() {
     let [name, setName] = useState('');
-    let [dropdown, setDropdown] = useState('');
-    const [isValid, setIsValid] = useState(false);
+        const [isValid, setIsValid] = useState(false);
 
     const onSubmit = (event) => {
         event.preventDefault();
         if (isValid) {
-            console.log('submitted');
+            console.log('your form is submit');
         } else {
-            alert('Please enter name');
+            alert('Please enter your name name');
         }
     };
 
