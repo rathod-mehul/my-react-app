@@ -3,6 +3,13 @@
 // import Functioncomponent from './funtion_component';
 // import Classcomonent from './class_componet';
 
+// bootstrap admin template import
+
+import Dashboard from "./content/Dashboard";
+import  Navabar  from "./layout/Navabar";
+import  Sidebar  from "./layout/Sidebar";
+import './assets/css/admin.css';
+import './assets/css/mdb.min.css';
 // import Navbar from "./layout/Navabar";
 // import Slidebar from "./layout/Sidebar";
 // import Footer from "./layout/Footer";
@@ -11,7 +18,8 @@
 // import Stats1 from "./practice_folder/stats_folder/Stats1";
 // import Hover from "./practice_folder/stats_folder/Hover";
 
-import Practice from "./practice_folder/Practice";
+
+// import Practice from "./practice_folder/Practice";
 function App() {
   return (
     //     <div className="App">
@@ -44,7 +52,12 @@ function App() {
       {/* <Stats1/> */}
       {/* <Hover/> */}
 
-      <Practice/>
+      {/* <Practice/> */}
+
+      <Navabar/>
+      <Sidebar/>
+
+      <Dashboard/>
 </>
   );
 }

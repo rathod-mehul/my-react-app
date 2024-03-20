@@ -1,12 +1,11 @@
 import PropTypes  from "prop-types";
 function Footer(props){
     return(
-        <div>this a footer {props.details.name}</div>
+        // <div>this a footer {props.details.name}</div>
+        <div><h1>thise is footer</h1></div>
     )
 }
 
-Footer.propTypes ={
-    details: PropTypes.object
-}
+
     
 export default Footer;

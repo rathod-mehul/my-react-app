@@ -5,7 +5,7 @@
 // import FormWithRef from "./FormwWthRef";
 // import Form from "./Form";
 // import FunctionComponent from "../FuntionComponent";
-import StyleComponent from "./style/StyleCompont";
+// import StyleComponent from "./style/StyleCompont";
 function Practice (){
 
 
@@ -18,7 +18,7 @@ function Practice (){
 {/* <FormWithRef/> */}
 {/* <Form/> */}
 {/* <FunctionComponent name="chirag"/> */}
-<StyleComponent/>
+{/* <StyleComponent/> */}
         </>
         )
 }
