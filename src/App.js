@@ -19,7 +19,7 @@ import './assets/css/mdb.min.css';
 // import Hover from "./practice_folder/stats_folder/Hover";
 
 
-// import Practice from "./practice_folder/Practice";
+import Practice from "./practice_folder/Practice";
 function App() {
   return (
     //     <div className="App">
@@ -52,12 +52,12 @@ function App() {
       {/* <Stats1/> */}
       {/* <Hover/> */}
 
-      {/* <Practice/> */}
+      <Practice/>
 
-      <Navabar/>
+      {/* <Navabar/>
       <Sidebar/>
 
-      <Dashboard/>
+      <Dashboard/> */}
 </>
   );
 }
