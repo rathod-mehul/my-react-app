@@ -18,6 +18,9 @@ import './assets/css/mdb.min.css';
 // import Stats1 from "./practice_folder/stats_folder/Stats1";
 // import Hover from "./practice_folder/stats_folder/Hover";
 
+//import bootstrap
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
 
 import Practice from "./practice_folder/Practice";
 function App() {
