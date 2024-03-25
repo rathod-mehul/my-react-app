@@ -7,6 +7,9 @@
 // import FunctionComponent from "../FuntionComponent";
 // import ForwardRefComponent from "./hook/Form";
 // import StyleComponent from "./hook/Form";
+
+import Calculator from "./calulator_folder/Calculator";
+
 // import StyleComponent from "./style/StyleCompont";
 function Practice (){
 
@@ -22,6 +25,7 @@ function Practice (){
 {/* <FunctionComponent name="chirag"/> */}
 {/* <StyleComponent/> */}
 {/* <ForwardRefComponent/> */}
+<Calculator/>
         </>
         )
 }
