@@ -10,6 +10,8 @@
 
 // import Calculator from "./calulator_folder/Calculator";
 import UseContextHookComponent from "./hook/useContext/UseContextHookComponent";
+import HttpRequestComponent from "./http_requests/HttpRequestComponent";
+import PostRequestComponent from "./http_requests/PostRequestComponent";
 
 // import StyleComponent from "./style/StyleCompont";
 function Practice (){
@@ -26,7 +28,9 @@ function Practice (){
 {/* <StyleComponent/> */}
 {/* <ForwardRefComponent/> */}
 {/* <Calculator/> */}
-<UseContextHookComponent/>
+{/* <UseContextHookComponent/> */}
+{/* <HttpRequestComponent/> */}
+<PostRequestComponent/>
         </>
         )
 }
