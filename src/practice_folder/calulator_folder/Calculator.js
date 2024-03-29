@@ -4,7 +4,6 @@ import calculator from "./calculator.css"
 function Calculator() {
     const [value, setValue] = useState('');
 
-
     return (
         <div className="container">
             <div className="calculator">

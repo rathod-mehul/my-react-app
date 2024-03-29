@@ -8,11 +8,11 @@
 // import ForwardRefComponent from "./hook/Form";
 // import StyleComponent from "./hook/Form";
 
-import Calculator from "./calulator_folder/Calculator";
+// import Calculator from "./calulator_folder/Calculator";
+import UseContextHookComponent from "./hook/useContext/UseContextHookComponent";
 
 // import StyleComponent from "./style/StyleCompont";
 function Practice (){
-
 
     return(
         <>
@@ -25,7 +25,8 @@ function Practice (){
 {/* <FunctionComponent name="chirag"/> */}
 {/* <StyleComponent/> */}
 {/* <ForwardRefComponent/> */}
-<Calculator/>
+{/* <Calculator/> */}
+<UseContextHookComponent/>
         </>
         )
 }

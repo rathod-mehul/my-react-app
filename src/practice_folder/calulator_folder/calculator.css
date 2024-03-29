@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(140deg, rgb(36, 36, 223), rgb(7, 7, 166));
+    background: blue;
 }
 
 .calculator {
