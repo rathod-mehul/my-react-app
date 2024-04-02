@@ -3,17 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
 
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+
 import Dashboard from './content/Dashboard';
 import Home from './practice_folder/Router/Home';
 import Route1 from './practice_folder/Router/Route1';
 import Route2 from './practice_folder/Router/Route2';
-
+import User from './practice_folder/Router/User';
+import { BrowserRouter, HashRouter, Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -32,11 +29,20 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //   }
 // ]);
 
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<App />}>
+      <Route index element={<Dashboard />} />
+      <Route path="users" element={<User />} />
+    </Route>
+  )
+);
 
 root.render(
   <React.StrictMode>
+   <BrowserRouter>
     <App />
-   
+    </BrowserRouter>
   </React.StrictMode>
   // <BrowserRouter>
   // <App/>

@@ -5,9 +5,9 @@
 
 // bootstrap admin template import
 
-import Dashboard from "./content/Dashboard";
-import  Navabar  from "./layout/Navabar";
-import  Sidebar  from "./layout/Sidebar";
+import Dashboard from "./practice_folder/Router/Dashboard";
+import Navbar from "./layout/Navbar";
+import Sidebar from "./layout/Sidebar";
 import './assets/css/admin.css';
 import './assets/css/mdb.min.css';
 // import Navbar from "./layout/Navabar";
@@ -23,30 +23,39 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
 
 import Practice from "./practice_folder/Practice";
+import Content from "./layout/Content";
 function App() {
   return (
-    //     <div className="App">
+    <>
+      {/* add layout here for render only content */}
+      <header>
+        <Sidebar />
+        <Navbar />
+      </header>
+      <Content />
+
+
+
+      {/* //     <div className="App">
     //       <header className="App-header">
     //         <img src={logo} className="App-logo" alt="logo" />
     //         <p>
     //           Edit <code>src/App.js</code> and save to reload.
     //         </p>
-    //         <a
-    //           className="App-link"
+    //         <a */}
+      {/* //           className="App-link"
     //           href="https://reactjs.org"
     //           target="_blank"
     //           rel="noopener noreferrer"
     //         >
     //           Learn React
-    //         </a>
-    //       </header>
-
+    //         </a> */}
+      {/* //       </header> */}
+      {/* 
     // <Functioncomponent />
-    // <Classcomonent />
+    // <Classcomonent /> */}
 
-    //     </div>
-
-    <>
+      {/* //     </div> */}
       {/* <Navbar compnayName/>
       <Slidebar menu={['hoem','about']}/>*/}
       {/* <Footer details={{name:'user1',mobile:5271679529}}/>  */}
@@ -55,13 +64,13 @@ function App() {
       {/* <Stats1/> */}
       {/* <Hover/> */}
 
-      <Practice/>
+      {/* <Practice/> */}
 
       {/* <Navabar/>
       <Sidebar/>
 
       <Dashboard/> */}
-</>
+    </>
   );
 }
 
