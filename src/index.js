@@ -29,28 +29,28 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //   }
 // ]);
 
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/" element={<App />}>
-      <Route index element={<Dashboard />} />
-      <Route path="users" element={<User />} />
-    </Route>
-  )
-);
+// const router = createBrowserRouter(
+//   createRoutesFromElements(
+//     <Route path="/" element={<App />}>
+//       <Route index element={<Dashboard />} />
+//       <Route path="users" element={<User />} />
+//     </Route>
+//   )
+// );
 
 root.render(
   <React.StrictMode>
-   <BrowserRouter>
-    <App />
+    <BrowserRouter>
+      <App />
     </BrowserRouter>
   </React.StrictMode>
   // <BrowserRouter>
   // <App/>
   // </BrowserRouter>
 
-//   <React.StrictMode>
-//   <RouterProvider router={router} />
-// </React.StrictMode>
+  //   <React.StrictMode>
+  //   <RouterProvider router={router} />
+  // </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,10 +1,10 @@
 import React, { useState, useEffect, Fragment } from "react";
-
+import { Link } from "react-router-dom";
 export default function HttpRequestComponent() {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        fetch('https://jsonplaceholder.typicode.com/posts')
+        fetch('https://jsonplaceholder.typicode.com/posts/')
         .then((res) => {
             return res.json();
         })
@@ -14,13 +14,14 @@ export default function HttpRequestComponent() {
     }, []);
     return (
 <Fragment>
-    <table>
+    <table className="table">
         <thead>
             <tr>
                 <td>id</td>
                 <td>user id</td>
                 <td>title</td>
                 <td>body</td>
+                <td>view post</td>
             </tr>
         </thead>
         <tbody>
@@ -31,6 +32,11 @@ export default function HttpRequestComponent() {
                             <td>{data.userId}</td>
                             <td>{data.title}</td>
                             <td>{data.body}</td>
+                            <td>
+                                <Link to={`/post/${data.id}`}>
+                                see post
+                                </Link>
+                            </td>
                         </tr>
                     </Fragment>
             ))}

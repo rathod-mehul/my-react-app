@@ -4,35 +4,40 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link,
+  NavLink as Link,
 } from "react-router-dom";
 import StyleComponent from '../practice_folder/style/StyleCompont';
 
-export default function Sidebar (props) {
+export default function Sidebar(props) {
   console.log('sidebar rendered');
   return (
     <nav id="sidebarMenu" className="collapse d-lg-block sidebar collapse bg-white">
       <div className="position-sticky">
         <div className="list-group list-group-flush mx-3 mt-4">
-        <div>
-              <Link to="/">
+          <div>
+            <Link to="/">
               <i className="fas fa-tachometer-alt fa-fw me-3"></i> <span>main dashboard</span>
-              </Link>
+            </Link>
           </div>
           <div>
-              <Link to="/users">
+            <Link to="/users">  
               <i className="fas fa-tachometer-alt fa-fw me-3"></i> <span>users</span>
-              </Link>
+            </Link>
           </div>
           <div>
-              <Link to="/form-validation">
+            <Link to="/form-validation">
               <i className="fas fa-tachometer-alt fa-fw me-3"></i> <span>form validation</span>
-              </Link>
+            </Link>
           </div>
           <div>
-              <Link to="/users/1">
+            <Link to="/users/1">
               <i className="fas fa-tachometer-alt fa-fw me-3"></i> <span>user details</span>
-              </Link>
+            </Link>
+          </div>
+          <div>
+            <Link to="posts">
+            <i className="fas fa-tachometer-alt fa-fw me-3"></i><span>Posts</span>
+            </Link>
           </div>
         </div>
       </div>
