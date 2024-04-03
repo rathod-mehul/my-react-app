@@ -37,6 +37,11 @@ export default function HttpRequestComponent() {
                                 see post
                                 </Link>
                             </td>
+                            <td>
+                                <Link to={`/post/${data.id}/comments`}>
+                                    see comment
+                                </Link>
+                            </td>
                         </tr>
                     </Fragment>
             ))}

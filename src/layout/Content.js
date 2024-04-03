@@ -7,6 +7,7 @@ import UserDetails from "../practice_folder/Router/UserDetails";
 import FormValidationDemo from "../practice_folder/FormValidationDemo";
 import HttpRequestComponent from "../practice_folder/http_requests/HttpRequestComponent";
 import Post from "../practice_folder/http_requests/Post";
+import PostComments from "../practice_folder/http_requests/PostComments";
 
 export default function Content() {
     return (
@@ -18,6 +19,7 @@ export default function Content() {
                     <Route path="/user" element={<User />} />
                     <Route path="/posts" element={<HttpRequestComponent />} />
                     <Route path="/post/:id" element={<Post />} />
+                    <Route path="/post/:id/comments" element={<PostComments/>} />
                     <Route path="users/:id" element={<UserDetails />} />
                     <Route path="/form-validation" element={<FormValidationDemo />} />
 
