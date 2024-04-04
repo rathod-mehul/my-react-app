@@ -20,9 +20,16 @@ export default function PostComments() {
         <div>
             {/* {data.title} */}
             {/* {data[0].email} */}
-            email :   {data.length > 0 && data[0].email}
-            <br /> body: {data.length > 0 && data[0].body}
-            <br /> post id : {data.length > 0 && data[0].postId}
+            <div className='m-5'>
+                <span className='border border-1 border-danger bg-success text-light p-2'> email :</span>   {data.length > 0 && data[0].email}
+            </div>
+            <div className='m-5'>
+                <br /><span className='border border-1 border-danger bg-success text-light p-2'> body :</span> {data.length > 0 && data[0].body}
+            </div>
+            <div className='m-5'>
+                <br /> <span className='border border-1 border-danger bg-success text-light p-2'> post id :</span> {data.length > 0 && data[0].postId}
+            </div>
+
         </div>
     )
 }
