@@ -9,8 +9,10 @@ import Dashboard from './content/Dashboard';
 import Home from './practice_folder/Router/Home';
 import Route1 from './practice_folder/Router/Route1';
 import Route2 from './practice_folder/Router/Route2';
-import User from './practice_folder/Router/User';
+// import User from './practice_folder/Router/User';
 import { BrowserRouter, HashRouter, Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import Store from './practice_folder/Redux/Store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -41,7 +43,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+
+      <Provider store={Store}>
+        <App />
+      </Provider>
+
     </BrowserRouter>
   </React.StrictMode>
   // <BrowserRouter>

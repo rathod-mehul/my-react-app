@@ -13,7 +13,7 @@ return(
                 <div className="container pt-4">
                     <table className="table">
                         <thead>
-                            <tr>
+                                      <tr>
                                 <th scope="col">#</th>
                                 <th scope="col">First</th>
                                 <th scope="col">Last</th>

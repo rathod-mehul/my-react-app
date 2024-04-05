@@ -20,8 +20,8 @@ export default function Sidebar(props) {
             </Link>
           </div>
           <div>
-            <Link to="/users">  
-              <i className="fas fa-tachometer-alt fa-fw me-3"></i> <span>users</span>
+            <Link to="/user2">  
+              <i className="fas fa-tachometer-alt fa-fw me-3"></i> <span>user2</span>
             </Link>
           </div>
           <div>

@@ -1,6 +1,10 @@
 import PropTypes from 'prop-types';
+import { useSelector } from "react-redux";
 
 export default function Navbar(props) {
+    const count = useSelector((state) =>  state.counter.value )
+    // const count = useSelector((state) => state.counter.value)
+
     return (
         console.log('Navbar rendered'),
         // <div>This is Navbar, Company Name is {props.companyName}</div>
@@ -12,7 +16,7 @@ export default function Navbar(props) {
                     aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
                     <i className="fas fa-bars"></i>
                 </button>
-
+                <h1>{count}</h1>
                 {/* <!-- Brand --> */}
                 <a className="navbar-brand" href="#">
                     <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png" height="25" alt="" loading="lazy" />

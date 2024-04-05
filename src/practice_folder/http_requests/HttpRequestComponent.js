@@ -1,7 +1,10 @@
 import React, { useState, useEffect, Fragment } from "react";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+
 export default function HttpRequestComponent() {
     const [data, setData] = useState([]);
+    const count = useSelector((state) => state.counter.value)
 
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/posts/')
@@ -14,6 +17,7 @@ export default function HttpRequestComponent() {
     }, []);
     return (
 <Fragment>
+                <h1>{count}</h1>
     <table className="table">
         <thead>
             <tr>
