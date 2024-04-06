@@ -30,7 +30,7 @@ export default function HttpRequestComponent() {
         </thead>
         <tbody>
             {data.map((data)=>(
-                    <Fragment>
+                    <Fragment key={data.id}>
                         <tr>
                             <td>{data.id}</td>
                             <td>{data.userId}</td>
