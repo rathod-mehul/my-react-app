@@ -8,6 +8,7 @@ import FormValidationDemo from "../practice_folder/FormValidationDemo";
 import HttpRequestComponent from "../practice_folder/http_requests/HttpRequestComponent";
 import Post from "../practice_folder/http_requests/Post";
 import PostComments from "../practice_folder/http_requests/PostComments";
+import Name from "../practice_folder/Redux/Name";
 
 export default function Content() {
     return (
@@ -19,9 +20,10 @@ export default function Content() {
                     <Route path="/user2" element={<User2 />} />
                     <Route path="/posts" element={<HttpRequestComponent />} />
                     <Route path="/post/:id" element={<Post />} />
-                    <Route path="/post/:id/comments" element={<PostComments/>} />
+                    <Route path="/post/:id/comments" element={<PostComments />} />
                     <Route path="users/:id" element={<UserDetails />} />
                     <Route path="/form-validation" element={<FormValidationDemo />} />
+                    <Route path="/Name" element={<Name />}></Route>
 
                 </Routes>
             </div>

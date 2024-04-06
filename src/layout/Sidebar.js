@@ -39,6 +39,11 @@ export default function Sidebar(props) {
             <i className="fas fa-tachometer-alt fa-fw me-3"></i><span>Posts</span>
             </Link>
           </div>
+          <div>
+            <Link to="name">
+            <i className="fas fa-tachometer-alt fa-fw me-3"></i><span>input value send using redux </span>
+            </Link>
+          </div>
         </div>
       </div>
     </nav>
