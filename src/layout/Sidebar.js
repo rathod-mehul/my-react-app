@@ -49,6 +49,11 @@ export default function Sidebar() {
               <i className="fas fa-tachometer-alt fa-fw me-3 "></i><span>My Todo list component</span>
             </Link>
           </div>
+          <div>
+            <Link to='localstotagrtodo'>
+            <i className="fas fa-tachometer-alt fa-fw me-3 "></i><span>LocalStorageTodo component</span>
+            </Link>
+          </div>
         </div>
       </div>
     </nav>

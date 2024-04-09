@@ -10,6 +10,7 @@ import Post from "../practice_folder/http_requests/Post";
 import PostComments from "../practice_folder/http_requests/PostComments";
 import Name from "../practice_folder/Redux/Name";
 import TodoList from "../practice_folder/TodoList/TodoList";
+import LocalStorageTodo from "../practice_folder/TodoList/LocalStorageTodo"
 
 export default function Content() {
     return (
@@ -26,6 +27,7 @@ export default function Content() {
                     <Route path="/form-validation" element={<FormValidationDemo />} />
                     <Route path="/Name" element={<Name />}></Route>
                     <Route path="todolist" element={<TodoList />}></Route>
+                    <Route path="localstotagrtodo" element={<LocalStorageTodo />}></Route>
                 </Routes>
             </div>
         </main>
