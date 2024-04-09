@@ -1,0 +1,38 @@
+body{
+    background: linear-gradient(rgb(6, 221, 203), rgb(10, 163, 183));
+    background-repeat: no-repeat;
+}
+.main {
+    min-height: 87.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .app {
+    width: 320px;
+    background: #fff;
+    max-width: 500px;
+    color: black;
+    padding: 15px;
+}
+
+.main .app ul{
+    padding: 0;
+    margin: 5px auto;
+}
+.main .app ul li{
+    padding: 15px;
+    list-style: none;
+    display: block;
+    width: 100%;
+    background: rgb(185, 183, 183);
+    position: relative;
+    margin: 10px auto;
+}
+.main .app ul li button{
+    padding: 1px;
+   position: absolute;
+   right: 10px;
+   background: linear-gradient(rgb(6, 221, 203), rgb(10, 163, 183));
+}

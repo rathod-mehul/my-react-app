@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import StyleComponent from '../practice_folder/style/StyleCompont';
 
-export default function Sidebar(props) {
+export default function Sidebar() {
   console.log('sidebar rendered');
   return (
     <nav id="sidebarMenu" className="collapse d-lg-block sidebar collapse bg-white">
@@ -20,7 +20,7 @@ export default function Sidebar(props) {
             </Link>
           </div>
           <div>
-            <Link to="/user2">  
+            <Link to="/user2">
               <i className="fas fa-tachometer-alt fa-fw me-3"></i> <span>user2</span>
             </Link>
           </div>
@@ -36,12 +36,17 @@ export default function Sidebar(props) {
           </div>
           <div>
             <Link to="posts">
-            <i className="fas fa-tachometer-alt fa-fw me-3"></i><span>Posts</span>
+              <i className="fas fa-tachometer-alt fa-fw me-3"></i><span>Posts</span>
             </Link>
           </div>
           <div>
             <Link to="name">
-            <i className="fas fa-tachometer-alt fa-fw me-3"></i><span>input value send using redux </span>
+              <i className="fas fa-tachometer-alt fa-fw me-3"></i><span>input value send using redux </span>
+            </Link>
+          </div>
+          <div>
+            <Link to='todolist'>
+              <i className="fas fa-tachometer-alt fa-fw me-3 "></i><span>My Todo list component</span>
             </Link>
           </div>
         </div>
