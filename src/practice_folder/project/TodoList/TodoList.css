@@ -1,8 +1,7 @@
-body{
+
+.main {
     background: linear-gradient(rgb(6, 221, 203), rgb(10, 163, 183));
     background-repeat: no-repeat;
-}
-.main {
     min-height: 87.5vh;
     display: flex;
     align-items: center;
